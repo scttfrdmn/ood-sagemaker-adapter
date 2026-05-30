@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Repinned `github.com/scttfrdmn/substrate` 0.45.2 → 0.65.0 and regenerated go.sum. The v0.45.2 tag content was changed upstream (substrate#296), so the recorded checksum no longer matched and `go test -tags=integration` failed with a go.sum SECURITY ERROR. Integration tests now build and pass.
+
 ### Added
 - Initial scaffold — OOD compute adapter for AWS SageMaker Studio, translating Open OnDemand interactive app requests to SageMaker API calls and returning presigned Studio URLs.
 - CLI commands: `launch` (create a SageMaker app → presigned Studio URL), `status <app-id>` (OOD-normalized status), and `delete <app-id>` (delete a Studio app).
