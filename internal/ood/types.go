@@ -3,11 +3,11 @@ package ood
 
 // AppSpec is the OOD interactive app launch payload.
 type AppSpec struct {
-	AppName    string            `json:"app_name"`
-	AppType    string            `json:"app_type,omitempty"` // JupyterServer, KernelGateway, etc.
-	UserName   string            `json:"user_name"`
-	DomainID   string            `json:"domain_id,omitempty"`
-	Env        map[string]string `json:"env,omitempty"`
+	AppName  string            `json:"app_name"`
+	AppType  string            `json:"app_type,omitempty"` // JupyterServer, KernelGateway, etc.
+	UserName string            `json:"user_name"`
+	DomainID string            `json:"domain_id,omitempty"`
+	Env      map[string]string `json:"env,omitempty"`
 }
 
 // AppStatus maps SageMaker app states to OOD status strings.

@@ -7,9 +7,9 @@ import (
 	"os"
 	"strings"
 
+	awstypes "github.com/aws/aws-sdk-go-v2/service/sagemaker/types"
 	"github.com/scttfrdmn/ood-sagemaker-adapter/internal/ood"
 	"github.com/scttfrdmn/ood-sagemaker-adapter/internal/sagemaker"
-	awstypes "github.com/aws/aws-sdk-go-v2/service/sagemaker/types"
 	"github.com/spf13/cobra"
 )
 
