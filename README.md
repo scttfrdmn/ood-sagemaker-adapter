@@ -1,5 +1,11 @@
 # ood-sagemaker-adapter
 
+[![CI](https://github.com/scttfrdmn/ood-sagemaker-adapter/actions/workflows/ci.yml/badge.svg)](https://github.com/scttfrdmn/ood-sagemaker-adapter/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/scttfrdmn/ood-sagemaker-adapter)](https://goreportcard.com/report/github.com/scttfrdmn/ood-sagemaker-adapter)
+[![codecov](https://codecov.io/gh/scttfrdmn/ood-sagemaker-adapter/branch/main/graph/badge.svg)](https://codecov.io/gh/scttfrdmn/ood-sagemaker-adapter)
+[![Go Reference](https://pkg.go.dev/badge/github.com/scttfrdmn/ood-sagemaker-adapter.svg)](https://pkg.go.dev/github.com/scttfrdmn/ood-sagemaker-adapter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 OOD compute adapter for AWS SageMaker Studio. Translates Open OnDemand interactive app requests to SageMaker API calls and returns presigned Studio URLs.
 
 ## Commands
