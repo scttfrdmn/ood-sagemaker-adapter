@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-05-30
+
 ### Fixed
 - `launch` now waits for the SageMaker app to reach `InService` (polling `DescribeApp`,
   bounded by `--wait-timeout`, default 5m) before returning the presigned Studio URL.

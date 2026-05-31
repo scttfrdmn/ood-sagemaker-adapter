@@ -11,7 +11,10 @@ var (
 	appType     string
 )
 
+var version = "dev" // overridden at release time via -ldflags -X .../cmd.version
+
 var rootCmd = &cobra.Command{
+	Version: version,
 	Use:   "ood-sagemaker-adapter",
 	Short: "OOD compute adapter for AWS SageMaker Studio",
 	Long:  "Translates Open OnDemand interactive app requests to SageMaker Studio API calls.",
