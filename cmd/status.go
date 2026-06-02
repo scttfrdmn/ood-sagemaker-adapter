@@ -26,7 +26,7 @@ var statusCmd = &cobra.Command{
 		did, profile, aType, appName := parts[0], parts[1], parts[2], parts[3]
 
 		ctx := context.Background()
-		client, err := sagemaker.New(ctx, region)
+		client, err := sagemaker.New(ctx, region, awsOptions(ctx)...)
 		if err != nil {
 			return err
 		}
