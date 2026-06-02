@@ -70,7 +70,7 @@ var launchCmd = &cobra.Command{
 		}
 
 		ctx := context.Background()
-		client, err := sagemaker.New(ctx, region)
+		client, err := sagemaker.New(ctx, region, awsOptions(ctx)...)
 		if err != nil {
 			return err
 		}
